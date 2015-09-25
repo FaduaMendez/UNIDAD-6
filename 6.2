@@ -1,0 +1,22 @@
+#include <iostream>
+#include <conio.h>
+#include "math.h"
+
+using namespace std;
+
+void main()
+{float cat1,cat2,area,hipotenusa;
+do{cout<<"Ingrese el primer cateto:";
+cin>>cat1;
+}while((cat1!=0)||(cat1<0));
+
+do{cout<<"Ingrese el primer cateto:";
+cin>>cat2;
+}while((cat2!=0)||(cat2<0));
+
+area=(cat1*cat2)/2;
+hipotenusa=sqrt((cat1*cat1)+(cat2*cat2));
+cout<<"El area es:"<<area;
+cout<<"La hipotenusa es:"<<hipotenusa;
+getch();
+}
