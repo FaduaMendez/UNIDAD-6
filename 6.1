@@ -1,0 +1,33 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{int n1,n2,aux,dig=0;
+do{dig=0;
+	cout<<"Ingrese un numero1:";
+	cin>>n1;
+	aux=n1;
+	while(aux>0)
+	{aux=aux/10;
+	 dig++;
+	}
+
+}while((dig>3)||(dig<3));
+do{dig=0;
+	cout<<"Ingrese un numero2:";
+	cin>>n2;
+	aux=n2;
+	while(aux>0)
+	{aux=aux/10;
+	 dig++;
+	}
+
+}while((dig>3)||(dig<3));
+
+cout<<"El producto es:"<<n1*n2<<endl;
+cout<<"El Cociente es:"<<n1/n2<<endl;
+cout<<"El Resto es:"<<n1%n2<<endl;
+getch();
+}
