@@ -1,0 +1,36 @@
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+void main()
+{int g1,g2,g3=0,m1,m2,m3=0,s1,s2,s3=0;
+cout<<"INGRESE LOS DATOS DEL PRIMER ANGULO"<<endl;
+cout<<"Grado: ";
+cin>>g1;
+cout<<"Minuto: ";
+cin>>m1;
+cout<<"Segundo: ";
+cin>>s1;
+cout<<"INGRESE LOS DATOS DEL SEGUNDO ANGULO"<<endl;
+cout<<"Grado: ";
+cin>>g2;
+cout<<"Minuto: ";
+cin>>m2;
+cout<<"Segundo: ";
+cin>>s2;
+
+s3=s2+s1;
+if(s3>=60)
+{s3=s3-60;
+m3++;
+}
+m3=m3+m2+m1;
+if(m3>=60)
+{m3=m3-60;
+g3++;
+}
+g3=g3+g1+g2;
+cout<<"El resultado de la suma es:"<<g3<<"°"<<m3<<"'"<<s3<<"''";
+getch();
+}
